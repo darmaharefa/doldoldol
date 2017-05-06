@@ -1,0 +1,28 @@
+{
+  "private": true,
+  "scripts": {
+    "webpack": "cross-env NODE_ENV=development webpack --progress --hide-modules",
+    "dev": "cross-env NODE_ENV=development webpack --watch --progress --hide-modules",
+    "hmr": "cross-env NODE_ENV=development webpack-dev-server --inline --hot",
+    "production": "cross-env NODE_ENV=production webpack --progress --hide-modules",
+    "test": "nyc ava --verbose",
+    "posttest": "nyc report --reporter=html"
+  },
+  "devDependencies": {
+    "axios": "^0.15.2",
+    "babel-helper-vue-jsx-merge-props": "^2.0.2",
+    "babel-plugin-syntax-jsx": "^6.18.0",
+    "babel-plugin-transform-vue-jsx": "^3.3.0",
+    "bootstrap-sass": "^3.3.7",
+    "jquery": "^3.1.0",
+    "laravel-mix": "^0.6.0",
+    "lodash": "^4.16.2",
+    "vue": "^2.0.1"
+  },
+  "dependencies": {
+    "cross-env": "^3.2.3",
+    "font-awesome": "^4.7.0",
+    "swiper": "^3.4.1",
+    "webpack": "^2.2.1"
+  }
+}
